@@ -4,16 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Self-Inking Stamp Color Chart | Sara Luke Creative</title>
-<meta name="description" content="All 96 self-inking stamp ink colors with exact hex and RGB values, grouped by color family.">
+<meta name="description" content="Browse every self-inking stamp ink color. Tap a color to copy its name for your order.">
 <meta name="color-scheme" content="light dark">
 <meta property="og:title" content="Self-Inking Stamp Color Chart">
-<meta property="og:description" content="All 96 self-inking stamp ink colors with exact hex and RGB values.">
+<meta property="og:description" content="Browse every self-inking stamp ink color. Tap a color to copy its name for your order.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&display=swap">
 <style>
-/* baseline reset */
 html{color-scheme:light dark}
 img{max-width:100%;height:auto}
 [hidden]{display:none !important}
@@ -49,8 +48,7 @@ img{max-width:100%;height:auto}
 body{
   margin:0; background:var(--ground); color:var(--ink);
   font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
-  font-size:15px; line-height:1.5;
-  -webkit-font-smoothing:antialiased;
+  font-size:15px; line-height:1.5; -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
 
@@ -61,20 +59,17 @@ header.mast{padding:56px 0 28px;border-bottom:1px solid var(--rule)}
   color:var(--muted);margin:0 0 14px;
 }
 h1{
-  font-family:"Instrument Serif",Georgia,serif; font-weight:400;
-  font-size:clamp(40px,7vw,68px); line-height:1.02; letter-spacing:-.015em;
-  margin:0; text-wrap:balance;
+  font-family:"Instrument Serif",Georgia,serif;font-weight:400;
+  font-size:clamp(40px,7vw,68px);line-height:1.02;letter-spacing:-.015em;
+  margin:0;text-wrap:balance;
 }
 h1 em{font-style:italic;color:var(--muted)}
-.lede{
-  margin:18px 0 0; max-width:60ch; color:var(--muted); font-size:16px;
-}
 .meta{
-  display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:24px;
-  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--faint);
+  display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:30px;
+  font-size:12px;letter-spacing:.06em;text-transform:uppercase;
+  font-weight:600;color:var(--faint);
 }
-.meta b{color:var(--ink);font-weight:500}
-
+.meta b{color:var(--ink);font-weight:700}
 .notice{
   margin-top:26px;padding:16px 18px;border-radius:9px;
   background:var(--surface-2);border:1px solid var(--rule);
@@ -87,7 +82,7 @@ h1 em{font-style:italic;color:var(--muted)}
   position:sticky;top:0;z-index:20;background:var(--ground);
   border-bottom:1px solid var(--rule);
   display:flex;flex-wrap:wrap;align-items:center;gap:12px;
-  padding:12px 0; margin-bottom:8px;
+  padding:12px 0;margin-bottom:8px;
 }
 .search{position:relative;flex:1 1 240px;min-width:200px}
 .search input{
@@ -107,47 +102,37 @@ h1 em{font-style:italic;color:var(--muted)}
 .seg button + button{border-left:1px solid var(--rule)}
 .seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
 .seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
-.count{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);white-space:nowrap}
+.count{font-size:12px;color:var(--faint);white-space:nowrap}
 
 /* ---------- sections ---------- */
 section.fam{padding-top:42px}
-.fam-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;
-  border-bottom:1px solid var(--rule);padding-bottom:8px}
-.fam-head h2{
-  font-family:"Archivo",sans-serif;font-size:12px;font-weight:700;
-  letter-spacing:.14em;text-transform:uppercase;margin:0;
+.fam-head{
+  display:flex;align-items:baseline;gap:12px;margin-bottom:16px;
+  border-bottom:1px solid var(--rule);padding-bottom:8px;
 }
-.fam-head .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--faint)}
+.fam-head h2{
+  font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;margin:0;
+}
+.fam-head .n{font-size:11px;color:var(--faint);font-weight:600}
 .fam-head .note{
-  margin-left:auto;font-size:11px;color:var(--muted);font-style:italic;
+  margin-left:auto;color:var(--muted);font-style:italic;
   font-family:"Instrument Serif",Georgia,serif;font-size:15px;
 }
 
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(152px,1fr));gap:14px}
 .chip{
   background:var(--surface);border:1px solid var(--rule);border-radius:9px;
   overflow:hidden;text-align:left;padding:0;font:inherit;color:inherit;
   cursor:pointer;display:flex;flex-direction:column;
-  transition:box-shadow .16s ease, transform .16s ease, border-color .16s ease;
+  transition:box-shadow .16s ease,transform .16s ease,border-color .16s ease;
 }
 @media (prefers-reduced-motion:reduce){.chip{transition:none}}
 .chip:hover{box-shadow:var(--shadow);border-color:var(--rule-strong);transform:translateY(-1px)}
 .chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-.swatch{height:82px;position:relative;border-bottom:1px solid var(--rule)}
+.swatch{height:108px;position:relative;border-bottom:1px solid var(--rule)}
 .swatch.pale::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(21,24,29,.13)}
-.chip .body{padding:9px 11px 11px;display:flex;flex-direction:column;gap:3px}
-.chip .name{font-size:13.5px;font-weight:600;line-height:1.25;letter-spacing:-.005em}
-.chip .val{
-  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);
-  font-variant-numeric:tabular-nums;
-}
-.chip .idx{
-  font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--faint);
-  position:absolute;top:6px;right:8px;
-  background:rgba(255,255,255,.82);color:#15181D;
-  padding:1px 5px;border-radius:4px;opacity:0;transition:opacity .15s;
-}
-.chip:hover .idx,.chip:focus-visible .idx{opacity:1}
+.chip .body{padding:10px 12px 12px;display:flex;align-items:center;min-height:44px}
+.chip .name{font-size:14px;font-weight:600;line-height:1.25;letter-spacing:-.005em}
 
 /* list view */
 body[data-view="list"] .grid{display:block}
@@ -157,31 +142,22 @@ body[data-view="list"] .chip{
 }
 body[data-view="list"] .chip:hover{transform:none;box-shadow:none;background:var(--surface)}
 body[data-view="list"] .swatch{
-  height:30px;width:52px;flex:none;border:1px solid var(--rule);border-radius:5px;
+  height:32px;width:64px;flex:none;border:1px solid var(--rule);border-radius:5px;
 }
-body[data-view="list"] .chip .body{flex-direction:row;align-items:baseline;gap:16px;padding:0;flex:1;min-width:0}
-body[data-view="list"] .chip .name{flex:0 0 200px}
-body[data-view="list"] .chip .idx{display:none}
+body[data-view="list"] .chip .body{padding:0;min-height:0}
 
-.empty{padding:60px 0;text-align:center;color:var(--muted);
-  font-family:"Instrument Serif",Georgia,serif;font-size:22px}
+.empty{
+  padding:60px 0;text-align:center;color:var(--muted);
+  font-family:"Instrument Serif",Georgia,serif;font-size:22px;
+}
 
-/* toast */
 #toast{
   position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);
-  background:var(--ink);color:var(--ground);padding:9px 16px;border-radius:999px;
-  font-size:13px;font-weight:500;opacity:0;pointer-events:none;
+  background:var(--ink);color:var(--ground);padding:10px 18px;border-radius:999px;
+  font-size:13.5px;font-weight:600;opacity:0;pointer-events:none;
   transition:opacity .18s ease,transform .18s ease;z-index:50;
-  font-family:"IBM Plex Mono",monospace;
 }
 #toast.on{opacity:1;transform:translate(-50%,0)}
-
-footer.foot{
-  margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);
-  color:var(--faint);font-size:12.5px;max-width:70ch;
-}
-footer.foot p{margin:0 0 8px}
-footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
 
 @media print{
   .bar,#toast{display:none}
@@ -193,8 +169,7 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
   .wrap{padding:0 16px 72px}
   header.mast{padding-top:36px}
   .grid{grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:10px}
-  body[data-view="list"] .chip .name{flex:0 0 auto}
-  body[data-view="list"] .chip .body{flex-wrap:wrap;gap:4px 12px}
+  .swatch{height:88px}
 }
 </style>
 
@@ -202,7 +177,6 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
   <header class="mast">
     <p class="eyebrow">Sara Luke Creative</p>
     <h1>Self-Inking Stamp<br><em>Color Chart</em></h1>
-    <p class="lede">Every self-inking stamp ink color, with the exact hex and RGB value for each. Click any color to copy its value.</p>
     <div class="meta">
       <span><b>96</b> colors</span>
       <span><b>8</b> standard</span>
@@ -219,19 +193,14 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
       <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
       <input id="q" type="search" placeholder="Search color names&hellip;" autocomplete="off" aria-label="Search color names">
     </div>
-    <div class="seg" role="group" aria-label="Value format">
-      <button type="button" data-fmt="hex" aria-pressed="true">HEX</button>
-      <button type="button" data-fmt="rgb" aria-pressed="false">RGB</button>
-    </div>
     <div class="seg" role="group" aria-label="Layout">
       <button type="button" data-view="grid" aria-pressed="true">Grid</button>
       <button type="button" data-view="list" aria-pressed="false">List</button>
     </div>
-    <span class="count" id="count">96 shown</span>
+    <span class="count" id="count">96 colors</span>
   </div>
 
   <main id="out"></main>
-
 </div>
 
 <div id="toast" role="status" aria-live="polite"></div>
@@ -242,13 +211,11 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
   var FAMS = JSON.parse(document.getElementById('data').textContent);
   var out = document.getElementById('out');
   var countEl = document.getElementById('count');
-  var fmt = 'hex';
 
   function lum(c){
     var a=[c.r,c.g,c.b].map(function(v){v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);});
     return 0.2126*a[0]+0.7152*a[1]+0.0722*a[2];
   }
-  function val(c){ return fmt==='hex' ? c.h : 'rgb('+c.r+', '+c.g+', '+c.b+')'; }
 
   function build(){
     out.innerHTML='';
@@ -257,32 +224,28 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
       sec.className='fam';
       var head=document.createElement('div');
       head.className='fam-head';
-      head.innerHTML='<h2></h2><span class="n"></span>';
-      head.querySelector('h2').textContent=f.name;
-      head.querySelector('.n').textContent=f.colors.length;
+      var h2=document.createElement('h2'); h2.textContent=f.name;
+      var n=document.createElement('span'); n.className='n'; n.textContent=f.colors.length;
+      head.appendChild(h2); head.appendChild(n);
       if(f.note){var nt=document.createElement('span');nt.className='note';nt.textContent=f.note;head.appendChild(nt);}
       sec.appendChild(head);
+
       var g=document.createElement('div'); g.className='grid';
       f.colors.forEach(function(c){
         var b=document.createElement('button');
-        b.type='button'; b.className='chip'; b.dataset.name=c.n.toLowerCase(); b.dataset.hex=c.h;
-        b.setAttribute('aria-label',c.n+', '+c.h+'. Copy value.');
+        b.type='button'; b.className='chip'; b.dataset.name=c.n.toLowerCase();
+        b.setAttribute('aria-label','Copy color name: '+c.n);
         var sw=document.createElement('div');
         sw.className='swatch'+(lum(c)>0.72?' pale':'');
         sw.style.background=c.h;
-        var idx=document.createElement('span'); idx.className='idx'; idx.textContent='#'+c.i;
-        sw.appendChild(idx);
         var bd=document.createElement('div'); bd.className='body';
         var nm=document.createElement('span'); nm.className='name'; nm.textContent=c.n;
-        var vl=document.createElement('span'); vl.className='val'; vl.textContent=val(c);
-        bd.appendChild(nm); bd.appendChild(vl);
+        bd.appendChild(nm);
         b.appendChild(sw); b.appendChild(bd);
-        b.addEventListener('click',function(){copy(c);});
+        b.addEventListener('click',function(){copy(c.n);});
         g.appendChild(b);
       });
       sec.appendChild(g);
-      var em=document.createElement('p'); em.className='empty'; em.hidden=true; em.textContent='No colors here match.';
-      sec.appendChild(em);
       out.appendChild(sec);
     });
   }
@@ -290,33 +253,23 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
   var toast=document.getElementById('toast'), tId;
   function say(msg){
     toast.textContent=msg; toast.classList.add('on');
-    clearTimeout(tId); tId=setTimeout(function(){toast.classList.remove('on');},1500);
+    clearTimeout(tId); tId=setTimeout(function(){toast.classList.remove('on');},1700);
   }
-  function copy(c){
-    var text=val(c);
-    var done=function(){say('Copied  '+text);};
+  function copy(name){
+    var done=function(){say('Copied “'+name+'”');};
     try{
       if(navigator.clipboard && navigator.clipboard.writeText){
-        navigator.clipboard.writeText(text).then(done,function(){legacy(text,done);});
-      } else { legacy(text,done); }
-    }catch(e){ legacy(text,done); }
+        navigator.clipboard.writeText(name).then(done,function(){legacy(name,done);});
+      } else { legacy(name,done); }
+    }catch(e){ legacy(name,done); }
   }
-  function legacy(text,done){
+  function legacy(name,done){
     try{
       var ta=document.createElement('textarea');
-      ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
+      ta.value=name; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
       document.body.appendChild(ta); ta.select(); document.execCommand('copy');
       document.body.removeChild(ta); done();
-    }catch(e){ say(text); }
-  }
-
-  function refmt(){
-    FAMS.forEach(function(f){
-      f.colors.forEach(function(c){
-        var el=out.querySelector('.chip[data-hex="'+c.h+'"][data-name="'+c.n.toLowerCase()+'"] .val');
-        if(el) el.textContent=val(c);
-      });
-    });
+    }catch(e){ say(name); }
   }
 
   function filter(){
@@ -325,24 +278,17 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
     out.querySelectorAll('section.fam').forEach(function(sec){
       var shown=0;
       sec.querySelectorAll('.chip').forEach(function(ch){
-        var hit = !q || ch.dataset.name.indexOf(q)>-1 || ch.dataset.hex.toLowerCase().indexOf(q)>-1;
+        var hit=!q || ch.dataset.name.indexOf(q)>-1;
         ch.hidden=!hit; if(hit) shown++;
       });
       sec.hidden = shown===0 && !!q;
       total+=shown;
     });
-    countEl.textContent = total + (total===1?' shown':' shown');
+    var none=document.getElementById('none');
+    none.hidden = total>0;
+    countEl.textContent = total===1 ? '1 color' : total+' colors';
   }
 
-  document.querySelectorAll('.seg button[data-fmt]').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      fmt=btn.dataset.fmt;
-      document.querySelectorAll('.seg button[data-fmt]').forEach(function(b){
-        b.setAttribute('aria-pressed', String(b===btn));
-      });
-      refmt();
-    });
-  });
   document.querySelectorAll('.seg button[data-view]').forEach(function(btn){
     btn.addEventListener('click',function(){
       document.body.dataset.view=btn.dataset.view;
@@ -355,6 +301,10 @@ footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
 
   document.body.dataset.view='grid';
   build();
+  var none=document.createElement('p');
+  none.className='empty'; none.id='none'; none.hidden=true;
+  none.textContent='No colors match that name.';
+  out.appendChild(none);
   filter();
 })();
 </script>
