@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Inking Stamp Color Chart | Sara Luke Creative</title>
+<meta name="description" content="All 96 self-inking stamp ink colors with exact hex and RGB values, grouped by color family.">
+<meta name="color-scheme" content="light dark">
+<meta property="og:title" content="Self-Inking Stamp Color Chart">
+<meta property="og:description" content="All 96 self-inking stamp ink colors with exact hex and RGB values.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Archivo:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* baseline reset */
+html{color-scheme:light dark}
+img{max-width:100%;height:auto}
+[hidden]{display:none !important}
+</style>
+</head>
+<body>
+<style>
+:root{
+  --ground:#F1F3F6; --surface:#FFFFFF; --surface-2:#E9ECF1;
+  --ink:#15181D; --muted:#5F656E; --faint:#8B919B;
+  --rule:#DBDFE6; --rule-strong:#C3C9D3;
+  --accent:#223886; --accent-soft:#E4E8F4;
+  --shadow:0 1px 2px rgba(21,24,29,.06),0 6px 18px -10px rgba(21,24,29,.18);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --ground:#0F1114; --surface:#181B21; --surface-2:#20242B;
+    --ink:#ECEEF2; --muted:#949BA5; --faint:#6E757F;
+    --rule:#262A32; --rule-strong:#39404A;
+    --accent:#95AEEA; --accent-soft:#1D2534;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px -10px rgba(0,0,0,.6);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#0F1114; --surface:#181B21; --surface-2:#20242B;
+  --ink:#ECEEF2; --muted:#949BA5; --faint:#6E757F;
+  --rule:#262A32; --rule-strong:#39404A;
+  --accent:#95AEEA; --accent-soft:#1D2534;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 6px 18px -10px rgba(0,0,0,.6);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--ground); color:var(--ink);
+  font-family:"Archivo","Helvetica Neue",Arial,sans-serif;
+  font-size:15px; line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px 96px}
+
+/* ---------- masthead ---------- */
+header.mast{padding:56px 0 28px;border-bottom:1px solid var(--rule)}
+.eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 14px;
+}
+h1{
+  font-family:"Instrument Serif",Georgia,serif; font-weight:400;
+  font-size:clamp(40px,7vw,68px); line-height:1.02; letter-spacing:-.015em;
+  margin:0; text-wrap:balance;
+}
+h1 em{font-style:italic;color:var(--muted)}
+.lede{
+  margin:18px 0 0; max-width:60ch; color:var(--muted); font-size:16px;
+}
+.meta{
+  display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:24px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12px;color:var(--faint);
+}
+.meta b{color:var(--ink);font-weight:500}
+
+.notice{
+  margin-top:26px;padding:16px 18px;border-radius:9px;
+  background:var(--surface-2);border:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:9px;max-width:74ch;
+}
+.notice p{margin:0;font-size:13px;line-height:1.55;color:var(--muted)}
+
+/* ---------- controls ---------- */
+.bar{
+  position:sticky;top:0;z-index:20;background:var(--ground);
+  border-bottom:1px solid var(--rule);
+  display:flex;flex-wrap:wrap;align-items:center;gap:12px;
+  padding:12px 0; margin-bottom:8px;
+}
+.search{position:relative;flex:1 1 240px;min-width:200px}
+.search input{
+  width:100%;padding:9px 12px 9px 34px;border-radius:7px;
+  border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);
+  font:inherit;font-size:14px;
+}
+.search input::placeholder{color:var(--faint)}
+.search input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:transparent}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--faint)}
+.seg{display:flex;border:1px solid var(--rule-strong);border-radius:7px;overflow:hidden;background:var(--surface)}
+.seg button{
+  appearance:none;border:0;background:transparent;color:var(--muted);
+  font:inherit;font-size:12px;font-weight:600;letter-spacing:.04em;
+  padding:8px 14px;cursor:pointer;
+}
+.seg button + button{border-left:1px solid var(--rule)}
+.seg button[aria-pressed="true"]{background:var(--accent-soft);color:var(--accent)}
+.seg button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.count{font-family:"IBM Plex Mono",monospace;font-size:12px;color:var(--faint);white-space:nowrap}
+
+/* ---------- sections ---------- */
+section.fam{padding-top:42px}
+.fam-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px;
+  border-bottom:1px solid var(--rule);padding-bottom:8px}
+.fam-head h2{
+  font-family:"Archivo",sans-serif;font-size:12px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;margin:0;
+}
+.fam-head .n{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--faint)}
+.fam-head .note{
+  margin-left:auto;font-size:11px;color:var(--muted);font-style:italic;
+  font-family:"Instrument Serif",Georgia,serif;font-size:15px;
+}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:14px}
+.chip{
+  background:var(--surface);border:1px solid var(--rule);border-radius:9px;
+  overflow:hidden;text-align:left;padding:0;font:inherit;color:inherit;
+  cursor:pointer;display:flex;flex-direction:column;
+  transition:box-shadow .16s ease, transform .16s ease, border-color .16s ease;
+}
+@media (prefers-reduced-motion:reduce){.chip{transition:none}}
+.chip:hover{box-shadow:var(--shadow);border-color:var(--rule-strong);transform:translateY(-1px)}
+.chip:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.swatch{height:82px;position:relative;border-bottom:1px solid var(--rule)}
+.swatch.pale::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(21,24,29,.13)}
+.chip .body{padding:9px 11px 11px;display:flex;flex-direction:column;gap:3px}
+.chip .name{font-size:13.5px;font-weight:600;line-height:1.25;letter-spacing:-.005em}
+.chip .val{
+  font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.chip .idx{
+  font-family:"IBM Plex Mono",monospace;font-size:10px;color:var(--faint);
+  position:absolute;top:6px;right:8px;
+  background:rgba(255,255,255,.82);color:#15181D;
+  padding:1px 5px;border-radius:4px;opacity:0;transition:opacity .15s;
+}
+.chip:hover .idx,.chip:focus-visible .idx{opacity:1}
+
+/* list view */
+body[data-view="list"] .grid{display:block}
+body[data-view="list"] .chip{
+  flex-direction:row;align-items:center;gap:14px;border-radius:0;
+  border:0;border-bottom:1px solid var(--rule);background:transparent;padding:7px 4px;
+}
+body[data-view="list"] .chip:hover{transform:none;box-shadow:none;background:var(--surface)}
+body[data-view="list"] .swatch{
+  height:30px;width:52px;flex:none;border:1px solid var(--rule);border-radius:5px;
+}
+body[data-view="list"] .chip .body{flex-direction:row;align-items:baseline;gap:16px;padding:0;flex:1;min-width:0}
+body[data-view="list"] .chip .name{flex:0 0 200px}
+body[data-view="list"] .chip .idx{display:none}
+
+.empty{padding:60px 0;text-align:center;color:var(--muted);
+  font-family:"Instrument Serif",Georgia,serif;font-size:22px}
+
+/* toast */
+#toast{
+  position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);
+  background:var(--ink);color:var(--ground);padding:9px 16px;border-radius:999px;
+  font-size:13px;font-weight:500;opacity:0;pointer-events:none;
+  transition:opacity .18s ease,transform .18s ease;z-index:50;
+  font-family:"IBM Plex Mono",monospace;
+}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+
+footer.foot{
+  margin-top:64px;padding-top:20px;border-top:1px solid var(--rule);
+  color:var(--faint);font-size:12.5px;max-width:70ch;
+}
+footer.foot p{margin:0 0 8px}
+footer.foot code{font-family:"IBM Plex Mono",monospace;color:var(--muted)}
+
+@media print{
+  .bar,#toast{display:none}
+  body{background:#fff;color:#000}
+  .chip{break-inside:avoid;border-color:#ccc}
+  .grid{grid-template-columns:repeat(6,1fr)}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px 72px}
+  header.mast{padding-top:36px}
+  .grid{grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:10px}
+  body[data-view="list"] .chip .name{flex:0 0 auto}
+  body[data-view="list"] .chip .body{flex-wrap:wrap;gap:4px 12px}
+}
+</style>
+
+<div class="wrap">
+  <header class="mast">
+    <p class="eyebrow">Sara Luke Creative</p>
+    <h1>Self-Inking Stamp<br><em>Color Chart</em></h1>
+    <p class="lede">Every self-inking stamp ink color, with the exact hex and RGB value for each. Click any color to copy its value.</p>
+    <div class="meta">
+      <span><b>96</b> colors</span>
+      <span><b>8</b> standard</span>
+      <span><b>88</b> premium</span>
+    </div>
+    <div class="notice">
+      <p>On-screen colors are a guide. Each screen displays colors with a slightly different profile, so there may be a variation between what you see here and what the ink looks like. Also, keep in mind that ink on paper is affected by the type of stock, texture and stamping technique.</p>
+      <p>Self-inking ink colors are not fully opaque, so they will not show true to color on dark surfaces. The color of the paper or stamping surface will show through and affect the final impression. For the most accurate result, I recommend stamping on a white or light-colored surface.</p>
+    </div>
+  </header>
+
+  <div class="bar">
+    <div class="search">
+      <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14"/></svg>
+      <input id="q" type="search" placeholder="Search color names&hellip;" autocomplete="off" aria-label="Search color names">
+    </div>
+    <div class="seg" role="group" aria-label="Value format">
+      <button type="button" data-fmt="hex" aria-pressed="true">HEX</button>
+      <button type="button" data-fmt="rgb" aria-pressed="false">RGB</button>
+    </div>
+    <div class="seg" role="group" aria-label="Layout">
+      <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+      <button type="button" data-view="list" aria-pressed="false">List</button>
+    </div>
+    <span class="count" id="count">96 shown</span>
+  </div>
+
+  <main id="out"></main>
+
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script id="data" type="application/json">[{"name":"Standard","note":"Included at no extra cost","colors":[{"i":1,"n":"Black","h":"#000000","r":0,"g":0,"b":0},{"i":2,"n":"Blue","h":"#1036BD","r":16,"g":54,"b":189},{"i":3,"n":"Red","h":"#ED2130","r":237,"g":33,"b":48},{"i":4,"n":"Green","h":"#008752","r":0,"g":135,"b":82},{"i":5,"n":"Purple","h":"#5A2DA0","r":90,"g":45,"b":160},{"i":6,"n":"Brown","h":"#8E5F2F","r":142,"g":95,"b":47},{"i":7,"n":"Pink","h":"#FF5FB8","r":255,"g":95,"b":184},{"i":8,"n":"Orange","h":"#ED6621","r":237,"g":102,"b":33}]},{"name":"Yellows & Golds","note":"Premium Colors","colors":[{"i":9,"n":"Buttercup","h":"#FFEA7E","r":255,"g":234,"b":126},{"i":10,"n":"Chrome Yellow","h":"#F8DC8A","r":248,"g":220,"b":138},{"i":11,"n":"Sunflower","h":"#FDCA4B","r":253,"g":202,"b":75},{"i":12,"n":"Sun Dazed","h":"#FFEB3B","r":255,"g":235,"b":59},{"i":13,"n":"Fossilized Amber","h":"#EFCF51","r":239,"g":207,"b":81},{"i":14,"n":"Goldenrod","h":"#E1B92B","r":225,"g":185,"b":43}]},{"name":"Oranges","note":"Premium Colors","colors":[{"i":15,"n":"Peachy Keen","h":"#F5A670","r":245,"g":166,"b":112},{"i":16,"n":"Orange Blossom","h":"#E96E10","r":233,"g":110,"b":16},{"i":17,"n":"Bright Tangelo","h":"#FF5414","r":255,"g":84,"b":20},{"i":18,"n":"Monarch Orange","h":"#E14C00","r":225,"g":76,"b":0}]},{"name":"Browns","note":"Premium Colors","colors":[{"i":19,"n":"Acorn","h":"#563E2E","r":86,"g":62,"b":46},{"i":20,"n":"Vintage Photo","h":"#7B5936","r":123,"g":89,"b":54},{"i":21,"n":"Sepia Brown","h":"#83420F","r":131,"g":66,"b":15},{"i":22,"n":"Potting Soil","h":"#5B4638","r":91,"g":70,"b":56},{"i":23,"n":"Roasted Coffee","h":"#694A35","r":105,"g":74,"b":53},{"i":24,"n":"Dark Roast","h":"#473328","r":71,"g":51,"b":40},{"i":25,"n":"Ground Espresso","h":"#382418","r":56,"g":36,"b":24}]},{"name":"Reds","note":"Premium Colors","colors":[{"i":26,"n":"Vermillion Red","h":"#E52F00","r":229,"g":47,"b":0},{"i":27,"n":"Carnation Red","h":"#F12E3C","r":241,"g":46,"b":60},{"i":28,"n":"Rose Shadow","h":"#EEADB2","r":238,"g":173,"b":178},{"i":29,"n":"Poppy","h":"#FB4F43","r":251,"g":79,"b":67},{"i":30,"n":"Cayenne","h":"#FF311B","r":255,"g":49,"b":27},{"i":31,"n":"Red Geranium","h":"#C73B33","r":199,"g":59,"b":51},{"i":32,"n":"Barn Door","h":"#B52C1D","r":181,"g":44,"b":29},{"i":33,"n":"Wine Cellar","h":"#A00933","r":160,"g":9,"b":51}]},{"name":"Pinks & Berries","note":"Premium Colors","colors":[{"i":34,"n":"Tea Rose","h":"#EFA9A0","r":239,"g":169,"b":160},{"i":35,"n":"Coastal Coral","h":"#FF9D8B","r":255,"g":157,"b":139},{"i":36,"n":"Pink Peony","h":"#FFD7DF","r":255,"g":215,"b":223},{"i":37,"n":"Bubblegum Pink","h":"#FF77B6","r":255,"g":119,"b":182},{"i":38,"n":"Sweet Treet","h":"#FF8EC1","r":255,"g":142,"b":193},{"i":39,"n":"Rosey Posey","h":"#F44E7B","r":244,"g":78,"b":123},{"i":40,"n":"Magenta Hue","h":"#DD519E","r":221,"g":81,"b":158},{"i":41,"n":"Vibrant Fuchsia","h":"#E163AE","r":225,"g":99,"b":174},{"i":42,"n":"Picked Raspberry","h":"#D71F73","r":215,"g":31,"b":115},{"i":43,"n":"Mulberry","h":"#8F1841","r":143,"g":24,"b":65},{"i":64,"n":"Light House","h":"#92284A","r":146,"g":40,"b":74}]},{"name":"Purples","note":"Premium Colors","colors":[{"i":44,"n":"Thistle","h":"#793E7D","r":121,"g":62,"b":125},{"i":45,"n":"Petunia","h":"#4A3B81","r":74,"g":59,"b":129},{"i":46,"n":"Ripe Plum","h":"#6E4A6B","r":110,"g":74,"b":107},{"i":47,"n":"Majestic Violet","h":"#9335B6","r":147,"g":53,"b":182},{"i":48,"n":"Vintage Violet","h":"#6D64D3","r":109,"g":100,"b":211},{"i":49,"n":"Dusty Concord","h":"#5A4A68","r":90,"g":74,"b":104},{"i":50,"n":"Aubergine","h":"#5F1E47","r":95,"g":30,"b":71},{"i":51,"n":"Deep Purple","h":"#422580","r":66,"g":37,"b":128}]},{"name":"Blues","note":"Premium Colors","colors":[{"i":52,"n":"Periwinkle","h":"#BCC1E9","r":188,"g":193,"b":233},{"i":53,"n":"Cornflower Blue","h":"#8190BD","r":129,"g":144,"b":189},{"i":54,"n":"Morning Glory","h":"#1A79C0","r":26,"g":121,"b":192},{"i":55,"n":"Sky Blue","h":"#A1C3DD","r":161,"g":195,"b":221},{"i":56,"n":"Bluebird","h":"#1E7DC6","r":30,"g":125,"b":198},{"i":57,"n":"Forget Me Not","h":"#0CA0CE","r":12,"g":160,"b":206},{"i":58,"n":"Manganese Blue","h":"#1B54AC","r":27,"g":84,"b":172},{"i":59,"n":"Mountain Lake","h":"#3276A8","r":50,"g":118,"b":168},{"i":60,"n":"Big Plans","h":"#393DAB","r":57,"g":61,"b":171},{"i":61,"n":"French Ultramarine","h":"#819CDE","r":129,"g":156,"b":222},{"i":62,"n":"Cobalt Blue","h":"#223886","r":34,"g":56,"b":134},{"i":63,"n":"Faded Jeans","h":"#6A8EB5","r":106,"g":142,"b":181},{"i":65,"n":"Stormy Seafarer","h":"#314D68","r":49,"g":77,"b":104},{"i":66,"n":"Best Dressed","h":"#2C4278","r":44,"g":66,"b":120},{"i":67,"n":"Night Sky","h":"#283757","r":40,"g":55,"b":87}]},{"name":"Teals & Aquas","note":"Premium Colors","colors":[{"i":68,"n":"Aquamarine","h":"#27B5AB","r":39,"g":181,"b":171},{"i":69,"n":"Garden Patina","h":"#00A7B6","r":0,"g":167,"b":182},{"i":70,"n":"Watering Can","h":"#7A898F","r":122,"g":137,"b":143},{"i":71,"n":"Paradise Teal","h":"#00789E","r":0,"g":120,"b":158},{"i":72,"n":"Calypso Teal","h":"#1497C0","r":20,"g":151,"b":192},{"i":73,"n":"Beach Cruiser","h":"#2C9198","r":44,"g":145,"b":152},{"i":74,"n":"Mermaid Lagoon","h":"#1C99A9","r":28,"g":153,"b":169},{"i":75,"n":"Viridian","h":"#4CC49F","r":76,"g":196,"b":159}]},{"name":"Greens","note":"Premium Colors","colors":[{"i":76,"n":"Peeled Paint","h":"#799D4B","r":121,"g":157,"b":75},{"i":77,"n":"Leaf Green","h":"#6CB029","r":108,"g":176,"b":41},{"i":78,"n":"Emerald Green","h":"#1C9C54","r":28,"g":156,"b":84},{"i":79,"n":"Fern Green","h":"#7CA24C","r":124,"g":162,"b":76},{"i":80,"n":"English Ivy","h":"#275838","r":39,"g":88,"b":56},{"i":81,"n":"Library Green","h":"#11512E","r":17,"g":81,"b":46},{"i":82,"n":"Vivid Chartreuse","h":"#7BC343","r":123,"g":195,"b":67},{"i":83,"n":"Prickly Pear","h":"#C9DD4E","r":201,"g":221,"b":78},{"i":84,"n":"Sea Grass","h":"#A0C63C","r":160,"g":198,"b":60},{"i":85,"n":"Peat Moss","h":"#8C8771","r":140,"g":135,"b":113},{"i":86,"n":"Avocado Toast","h":"#B3BD3B","r":179,"g":189,"b":59},{"i":87,"n":"Dirty Martini","h":"#6B9C42","r":107,"g":156,"b":66},{"i":88,"n":"Olive Green","h":"#305D05","r":48,"g":93,"b":5}]},{"name":"Neutrals & Blacks","note":"Premium Colors","colors":[{"i":89,"n":"Sand Castle","h":"#D6B796","r":214,"g":183,"b":150},{"i":90,"n":"Pebble Beach","h":"#A89C86","r":168,"g":156,"b":134},{"i":91,"n":"Hickory Smoke","h":"#A5ABAF","r":165,"g":171,"b":175},{"i":92,"n":"Shadow Grey","h":"#BEC1C4","r":190,"g":193,"b":196},{"i":93,"n":"Graphite","h":"#54585C","r":84,"g":88,"b":92},{"i":94,"n":"Black Marble","h":"#2A2A2E","r":42,"g":42,"b":46},{"i":95,"n":"Black Soot","h":"#262626","r":38,"g":38,"b":38},{"i":96,"n":"Jet Black","h":"#1A1A1A","r":26,"g":26,"b":26}]}]</script>
+<script>
+(function(){
+  var FAMS = JSON.parse(document.getElementById('data').textContent);
+  var out = document.getElementById('out');
+  var countEl = document.getElementById('count');
+  var fmt = 'hex';
+
+  function lum(c){
+    var a=[c.r,c.g,c.b].map(function(v){v/=255;return v<=0.03928?v/12.92:Math.pow((v+0.055)/1.055,2.4);});
+    return 0.2126*a[0]+0.7152*a[1]+0.0722*a[2];
+  }
+  function val(c){ return fmt==='hex' ? c.h : 'rgb('+c.r+', '+c.g+', '+c.b+')'; }
+
+  function build(){
+    out.innerHTML='';
+    FAMS.forEach(function(f){
+      var sec=document.createElement('section');
+      sec.className='fam';
+      var head=document.createElement('div');
+      head.className='fam-head';
+      head.innerHTML='<h2></h2><span class="n"></span>';
+      head.querySelector('h2').textContent=f.name;
+      head.querySelector('.n').textContent=f.colors.length;
+      if(f.note){var nt=document.createElement('span');nt.className='note';nt.textContent=f.note;head.appendChild(nt);}
+      sec.appendChild(head);
+      var g=document.createElement('div'); g.className='grid';
+      f.colors.forEach(function(c){
+        var b=document.createElement('button');
+        b.type='button'; b.className='chip'; b.dataset.name=c.n.toLowerCase(); b.dataset.hex=c.h;
+        b.setAttribute('aria-label',c.n+', '+c.h+'. Copy value.');
+        var sw=document.createElement('div');
+        sw.className='swatch'+(lum(c)>0.72?' pale':'');
+        sw.style.background=c.h;
+        var idx=document.createElement('span'); idx.className='idx'; idx.textContent='#'+c.i;
+        sw.appendChild(idx);
+        var bd=document.createElement('div'); bd.className='body';
+        var nm=document.createElement('span'); nm.className='name'; nm.textContent=c.n;
+        var vl=document.createElement('span'); vl.className='val'; vl.textContent=val(c);
+        bd.appendChild(nm); bd.appendChild(vl);
+        b.appendChild(sw); b.appendChild(bd);
+        b.addEventListener('click',function(){copy(c);});
+        g.appendChild(b);
+      });
+      sec.appendChild(g);
+      var em=document.createElement('p'); em.className='empty'; em.hidden=true; em.textContent='No colors here match.';
+      sec.appendChild(em);
+      out.appendChild(sec);
+    });
+  }
+
+  var toast=document.getElementById('toast'), tId;
+  function say(msg){
+    toast.textContent=msg; toast.classList.add('on');
+    clearTimeout(tId); tId=setTimeout(function(){toast.classList.remove('on');},1500);
+  }
+  function copy(c){
+    var text=val(c);
+    var done=function(){say('Copied  '+text);};
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done,function(){legacy(text,done);});
+      } else { legacy(text,done); }
+    }catch(e){ legacy(text,done); }
+  }
+  function legacy(text,done){
+    try{
+      var ta=document.createElement('textarea');
+      ta.value=text; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select(); document.execCommand('copy');
+      document.body.removeChild(ta); done();
+    }catch(e){ say(text); }
+  }
+
+  function refmt(){
+    FAMS.forEach(function(f){
+      f.colors.forEach(function(c){
+        var el=out.querySelector('.chip[data-hex="'+c.h+'"][data-name="'+c.n.toLowerCase()+'"] .val');
+        if(el) el.textContent=val(c);
+      });
+    });
+  }
+
+  function filter(){
+    var q=document.getElementById('q').value.trim().toLowerCase();
+    var total=0;
+    out.querySelectorAll('section.fam').forEach(function(sec){
+      var shown=0;
+      sec.querySelectorAll('.chip').forEach(function(ch){
+        var hit = !q || ch.dataset.name.indexOf(q)>-1 || ch.dataset.hex.toLowerCase().indexOf(q)>-1;
+        ch.hidden=!hit; if(hit) shown++;
+      });
+      sec.hidden = shown===0 && !!q;
+      total+=shown;
+    });
+    countEl.textContent = total + (total===1?' shown':' shown');
+  }
+
+  document.querySelectorAll('.seg button[data-fmt]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      fmt=btn.dataset.fmt;
+      document.querySelectorAll('.seg button[data-fmt]').forEach(function(b){
+        b.setAttribute('aria-pressed', String(b===btn));
+      });
+      refmt();
+    });
+  });
+  document.querySelectorAll('.seg button[data-view]').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      document.body.dataset.view=btn.dataset.view;
+      document.querySelectorAll('.seg button[data-view]').forEach(function(b){
+        b.setAttribute('aria-pressed', String(b===btn));
+      });
+    });
+  });
+  document.getElementById('q').addEventListener('input',filter);
+
+  document.body.dataset.view='grid';
+  build();
+  filter();
+})();
+</script>
+
+</body>
+</html>
